@@ -47,6 +47,7 @@
         </div>
     </nav>
 
+    <!-- reservetable modal -->
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -107,9 +108,21 @@
                         <div class="col-12 col-sm-2">
                             <label>Section</label>
                         </div> 
-                        <div class="col-sm col">
-                            <button class="btn btn-success active" type="radio" name="section" checked=>Non-Smoking</button>
-                            <button class="btn btn-danger" type="radio" name="section">Smoking</button>
+                        <!-- <div class="btn-group-toggle" data-toggle="buttons">
+                            <div class="col-sm col">
+                                <button class="btn btn-success active" type="radio" name="section" checked=>Non-Smoking</button>
+                                <button class="btn btn-danger" type="radio" name="section">Smoking</button>
+                            </div>
+                        </div> -->
+                        <div class="col col-sm">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" name="options" id="option1" autocomplete="off"> Smoking
+                                </label>
+                            </div>
                         </div>
                     </div>
 
